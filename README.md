@@ -6,7 +6,7 @@ PHP Swoole client for [NSQ](https://github.com/bitly/nsq).
 
 ### Requirements
 
-  - PHP 5.4 or higher
+  - PHP 5.6 or higher
   - Swoole 1.8.6 or higher
 
 ### Installation
@@ -18,11 +18,11 @@ PHP Swoole client for [NSQ](https://github.com/bitly/nsq).
 
 Publish:
 
-    php tests/PublishTest.php
+    php tests/TestPub.php
 
 Subscribe:
 
-    php tests/SubscribeTest.php
+    php tests/TestSub.php
 
 ### Publishing
 
@@ -41,8 +41,7 @@ $client->publish('test', ['message one', 'message two']);
 
 //HA publishing:
 $client->publishTo([
-    ['host' => 'nsq1', 'port' => 4150],
-    ['host' => 'nsq2', /*'port' => 4150*/]
+    ['host' => '139.196.205.19', 'port' => 4150],
 ], Iris\NsqToSwoole\Client::PUB_QUORUM)->publish('test', 'HA publishing message');
 ```
 
@@ -55,8 +54,7 @@ messages for a given topic.
 
 ```php
 $lookup = new Iris\NsqToSwoole\Lookup\Lookupd([
-    ['host' => 'nsq1', 'port' => 4161],
-    ['host' => 'nsq2', /*'port' => 4161*/]
+    ['host' => '139.196.205.19', 'port' => 4161],
 ]);
 
 $client = new Iris\NsqToSwoole\Client;
