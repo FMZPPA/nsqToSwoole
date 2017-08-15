@@ -1,7 +1,7 @@
 {
-  "name": "Iris/nsqToSwoole",
+  "name": "iris/nsq_to_swoole",
   "description": "client for NSQ with php-swoole",
-  "homepage": "",
+  "homepage": "https://github.com/iris-xie",
   "type": "library",
   "license": "MIT",
   "authors": [
