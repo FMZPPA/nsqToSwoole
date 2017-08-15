@@ -12,7 +12,7 @@ PHP Swoole client for [NSQ](https://github.com/bitly/nsq).
 
     pecl install swoole
 
-    composer require Iris/nsqToSwoole
+    composer require iris/nsq_to_swoole
 
 
 ### Testing it out
