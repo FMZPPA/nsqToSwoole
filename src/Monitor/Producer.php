@@ -1,6 +1,6 @@
 <?php
 /**
- * Author: Janson
+ * @author Iris Xie
  * Create: 2017-05-30
  */
 namespace Iris\NsqToSwoole\Monitor;

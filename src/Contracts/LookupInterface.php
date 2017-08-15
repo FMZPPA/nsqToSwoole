@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Janson
+ * @author Iris Xie
  * @create 2017-06-01
  */
 namespace Iris\NsqToSwoole\Contracts;
