@@ -1,17 +1,17 @@
 {
-  "name": "Iris/nsq-swoole",
-  "description": "PHP client for NSQ with Swoole",
-  "homepage": "https://github.com/Janson-Leung/nsq-swoole",
+  "name": "Iris/nsqToSwoole",
+  "description": "client for NSQ with php-swoole",
+  "homepage": "",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "Janson Leung",
-      "homepage": "https://github.com/Janson-Leung"
+      "name": "Iris xie",
+      "homepage": "https://github.com/iris-xie"
     }
   ],
   "require": {
-    "php": ">=5.4",
+    "php": ">=5.6",
     "ext-swoole": ">=1.8.6"
   },
   "minimum-stability": "stable",

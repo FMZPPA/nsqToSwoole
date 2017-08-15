@@ -1,6 +1,5 @@
-# NSQ-SWOOLE
+# NsqToSwoole
 
-我去恶趣味驱蚊器我
 
 PHP Swoole client for [NSQ](https://github.com/bitly/nsq).
 
@@ -13,10 +12,12 @@ PHP Swoole client for [NSQ](https://github.com/bitly/nsq).
 
     pecl install swoole
 
-    composer require Iris/nsq-swoole
+    composer require Iris/nsqToSwoole
 
 
 ### Testing it out
+
+    cd nsqToSwoole
 
 Publish:
 
