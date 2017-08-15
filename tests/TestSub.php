@@ -7,12 +7,11 @@
  */
 require __DIR__ . '/../autoload.php';
 
-$lookup = new Asan\Nsq\Lookup\Lookupd([
-    ['host' => '192.168.1.50', 'port' => 4161],
-    ['host' => '192.168.1.51', 'port' => 4161]
+$lookup = new Iris\NsqToSwoole\Lookup\Lookupd([
+    ['host' => '139.196.205.19', 'port' => 4161],
 ]);
 
-$client = new Asan\Nsq\Client;
+$client = new Iris\NsqToSwoole\Client;
 
 $client->subscribe($lookup, 'test', 'web', function($moniter, $msg) {
     echo sprintf("READ\t%s\t%s\n", $msg->getId(), $msg->getPayload());

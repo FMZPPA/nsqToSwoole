@@ -11,7 +11,7 @@ PHP Swoole client for [NSQ](https://github.com/bitly/nsq).
 
 ### Installation
 
-    composer require asan/nsq-swoole
+    composer require Iris/nsq-swoole
 
 
 ### Testing it out
@@ -30,7 +30,7 @@ The client supports publishing to N `nsqd` servers. which must be specified
 explicitly by hostname. And supports publishing multiple messages.
 
 ```php
-$client = new Asan\Nsq\Client;
+$client = new Iris\NsqToSwoole\Client;
 
 $client->publishTo([
     ['host' => 'localhost', 'port' => 4150]
@@ -43,7 +43,7 @@ $client->publish('test', ['message one', 'message two']);
 $client->publishTo([
     ['host' => 'nsq1', 'port' => 4150],
     ['host' => 'nsq2', /*'port' => 4150*/]
-], Asan\Nsq\Client::PUB_QUORUM)->publish('test', 'HA publishing message');
+], Iris\NsqToSwoole\Client::PUB_QUORUM)->publish('test', 'HA publishing message');
 ```
 
 ### Subscribing
@@ -54,12 +54,12 @@ that `nslookupd` is able to provide a list of auto-discovered nodes hosting
 messages for a given topic.
 
 ```php
-$lookup = new Asan\Nsq\Lookup\Lookupd([
+$lookup = new Iris\NsqToSwoole\Lookup\Lookupd([
     ['host' => 'nsq1', 'port' => 4161],
     ['host' => 'nsq2', /*'port' => 4161*/]
 ]);
 
-$client = new Asan\Nsq\Client;
+$client = new Iris\NsqToSwoole\Client;
 
 $client->subscribe($lookup, 'test', 'web', function($moniter, $msg) {
     echo sprintf("READ\t%s\t%s\n", $msg->getId(), $msg->getPayload());

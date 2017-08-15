@@ -3,10 +3,10 @@
  * Author: Janson
  * Create: 2017-05-31
  */
-namespace Asan\Nsq\Lookup;
+namespace Iris\NsqToSwoole\Lookup;
 
-use Asan\Nsq\Contracts\LookupInterface;
-use Asan\Nsq\Exception\LookupException;
+use Iris\NsqToSwoole\Contracts\LookupInterface;
+use Iris\NsqToSwoole\Exception\LookupException;
 
 /**
  * Represents nsqlookupd and allows us to find machines we need to talk to

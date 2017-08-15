@@ -3,10 +3,10 @@
  * Author: Janson
  * Create: 2017-05-30
  */
-namespace Asan\Nsq\Monitor;
+namespace Iris\NsqToSwoole\Monitor;
 
-use Asan\Nsq\Contracts\MonitorInterface;
-use Asan\Nsq\Exception\SocketException;
+use Iris\NsqToSwoole\Contracts\MonitorInterface;
+use Iris\NsqToSwoole\Exception\SocketException;
 
 abstract class AbstractMonitor implements MonitorInterface {
     /**

@@ -3,9 +3,9 @@
  * @author Janson
  * @create 2017-06-01
  */
-namespace Asan\Nsq\Contracts;
+namespace Iris\NsqToSwoole\Contracts;
 
-use Asan\Nsq\Exception\LookupException;
+use Iris\NsqToSwoole\Exception\LookupException;
 
 interface LookupInterface {
     /**

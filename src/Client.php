@@ -3,14 +3,14 @@
  * Author: Janson
  * Create: 2017-05-29
  */
-namespace Asan\Nsq;
+namespace Iris\NsqToSwoole;
 
-use Asan\Nsq\Contracts\LookupInterface;
-use Asan\Nsq\Exception\PublishException;
-use Asan\Nsq\Monitor\Consumer;
-use Asan\Nsq\Monitor\Producer;
-use Asan\Nsq\Protocol\Command;
-use Asan\Nsq\Protocol\Response;
+use Iris\NsqToSwoole\Contracts\LookupInterface;
+use Iris\NsqToSwoole\Exception\PublishException;
+use Iris\NsqToSwoole\Monitor\Consumer;
+use Iris\NsqToSwoole\Monitor\Producer;
+use Iris\NsqToSwoole\Protocol\Command;
+use Iris\NsqToSwoole\Protocol\Response;
 
 class Client {
     const PUB_ONE = 1;

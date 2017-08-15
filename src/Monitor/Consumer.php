@@ -3,13 +3,13 @@
  * Author: Janson
  * Create: 2017-05-30
  */
-namespace Asan\Nsq\Monitor;
+namespace Iris\NsqToSwoole\Monitor;
 
-use Asan\Nsq\Exception\ConnectionException;
-use Asan\Nsq\Exception\FrameException;
-use Asan\Nsq\Protocol\Command;
-use Asan\Nsq\Protocol\Message;
-use Asan\Nsq\Protocol\Response;
+use Iris\NsqToSwoole\Exception\ConnectionException;
+use Iris\NsqToSwoole\Exception\FrameException;
+use Iris\NsqToSwoole\Protocol\Command;
+use Iris\NsqToSwoole\Protocol\Message;
+use Iris\NsqToSwoole\Protocol\Response;
 
 class Consumer extends AbstractMonitor {
     /**

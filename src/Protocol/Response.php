@@ -3,9 +3,9 @@
  * Author: Janson
  * Create: 2017-05-30
  */
-namespace Asan\Nsq\Protocol;
+namespace Iris\NsqToSwoole\Protocol;
 
-use Asan\Nsq\Exception\FrameException;
+use Iris\NsqToSwoole\Exception\FrameException;
 
 class Response {
     /**

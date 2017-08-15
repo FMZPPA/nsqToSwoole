@@ -3,10 +3,10 @@
  * Author: Janson
  * Create: 2017-05-30
  */
-namespace Asan\Nsq\Protocol;
+namespace Iris\NsqToSwoole\Protocol;
 
-use Asan\Nsq\Contracts\MessageInterface;
-use Asan\Nsq\Exception\FrameException;
+use Iris\NsqToSwoole\Contracts\MessageInterface;
+use Iris\NsqToSwoole\Exception\FrameException;
 
 class Message implements MessageInterface {
     /**

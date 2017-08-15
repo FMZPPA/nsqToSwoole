@@ -3,7 +3,7 @@
  * Author: Janson
  * Create: 2017-05-30
  */
-namespace Asan\Nsq\Protocol;
+namespace Iris\NsqToSwoole\Protocol;
 
 class Command {
     const MAGIC_V2 = "  V2";

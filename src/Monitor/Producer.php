@@ -3,11 +3,11 @@
  * Author: Janson
  * Create: 2017-05-30
  */
-namespace Asan\Nsq\Monitor;
+namespace Iris\NsqToSwoole\Monitor;
 
-use Asan\Nsq\Exception\ConnectionException;
-use Asan\Nsq\Exception\SocketException;
-use Asan\Nsq\Protocol\Command;
+use Iris\NsqToSwoole\Exception\ConnectionException;
+use Iris\NsqToSwoole\Exception\SocketException;
+use Iris\NsqToSwoole\Protocol\Command;
 
 class Producer extends AbstractMonitor {
     /**
