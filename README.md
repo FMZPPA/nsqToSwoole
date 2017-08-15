@@ -11,6 +11,8 @@ PHP Swoole client for [NSQ](https://github.com/bitly/nsq).
 
 ### Installation
 
+    pecl install swoole
+
     composer require Iris/nsq-swoole
 
 
