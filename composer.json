@@ -16,6 +16,6 @@
   },
   "minimum-stability": "stable",
   "autoload": {
-    "psr-4": {"Iris\\Nsq\\": "src/"}
+    "psr-4": {"Iris\\NsqToSwoole\\": "src/"}
   }
 }
